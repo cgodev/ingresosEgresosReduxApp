@@ -24,7 +24,8 @@
               "src/assets"
             ],
             "styles": [
-              "src/styles.css"
+              "src/styles.css",
+              "node_modules/bootstrap/dist/css/bootstrap.min.css"
             ],
             "scripts": []
           },
@@ -117,8 +118,16 @@
               "devServerTarget": "ingresoEgresoApp:serve:production"
             }
           }
+        },
+        "deploy": {
+          "builder": "@angular/fire:deploy",
+          "options": {}
         }
       }
-    }},
-  "defaultProject": "ingresoEgresoApp"
+    }
+  },
+  "defaultProject": "ingresoEgresoApp",
+  "cli": {
+    "analytics": false
+  }
 }
